@@ -1,12 +1,40 @@
 export interface ISkillItem {
-  text: string
-  rate: number
+  readonly text: string
+  readonly rate: number
 }
 
-export const skillList: ISkillItem[] = [
+export const mainSkillList: ISkillItem[] = [
   {
     text: 'JavaScript',
     rate: 4
+  },
+  {
+    text: 'React',
+    rate: 2
+  },
+  {
+    text: 'Redux',
+    rate: 2
+  },
+  {
+    text: 'Redux-thunk',
+    rate: 2
+  },
+  {
+    text: 'TypeScript',
+    rate: 2
+  },
+  {
+    text: 'NodeJS',
+    rate: 2
+  },
+  {
+    text: 'Mongoose',
+    rate: 1
+  },
+  {
+    text: 'Express',
+    rate: 1
   },
   {
     text: 'HTML',
@@ -27,30 +55,6 @@ export const skillList: ISkillItem[] = [
   {
     text: 'BEM',
     rate: 4
-  },
-  {
-    text: 'NodeJS',
-    rate: 1
-  },
-  {
-    text: 'Mongoose',
-    rate: 1
-  },
-  {
-    text: 'Express',
-    rate: 1
-  },
-  {
-    text: 'React',
-    rate: 1
-  },
-  {
-    text: 'Redux',
-    rate: 1
-  },
-  {
-    text: 'TypeScript',
-    rate: 1
   },
   {
     text: 'Jest',
@@ -80,6 +84,9 @@ export const skillList: ISkillItem[] = [
     text: 'NPM',
     rate: 2
   },
+]
+
+export const otherSkillList: ISkillItem[] = [
   {
     text: 'BrowserStack',
     rate: 2

@@ -1,4 +1,5 @@
 import React from 'react';
+import {Typography} from "@mui/material";
 
 interface IProps {
   children: JSX.Element[]
@@ -7,7 +8,7 @@ interface IProps {
 const ItemList: React.FC<IProps> = ({children}) => {
   return (
     <ul style={{margin: 0}}>
-      {children.map((child, i) => <li key={i}>{child}</li>)}
+      {children.map((child, i) => <li key={i}><Typography>{child}</Typography></li>)}
     </ul>
   );
 };

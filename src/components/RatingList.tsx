@@ -18,15 +18,15 @@ const RatingList: React.FC<IProps> = ({rateList}) => {
     <Box sx={{width: '100%'}}>
       <Grid container columnSpacing={5} direction={'row'}>
         <Grid item xs={6}>
-          {rateList.slice(0, count).map(it =>
-            <Stack>
+          {rateList.slice(0, count).map((it, i) =>
+            <Stack key={i}>
               <RatingItem text={it.text} defaultValue={it.rate} max={5}/>
             </Stack>
           )}
         </Grid>
         <Grid item xs={6}>
-          {rateList.slice(count).map(it =>
-            <Stack>
+          {rateList.slice(count).map((it, i) =>
+            <Stack key={i}>
               <RatingItem text={it.text} defaultValue={it.rate} max={5}/>
             </Stack>
           )}

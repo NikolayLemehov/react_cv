@@ -6,7 +6,7 @@ import PositionItem from "./PositionItem";
 import Position from "./Position";
 import ItemList from "./ItemList";
 import RatingList from "./RatingList";
-import {skillList} from "../data/skills";
+import {mainSkillList, otherSkillList} from "../data/skills";
 import RatingItem from "./RatingItem";
 
 const MainSection = () => {
@@ -32,7 +32,7 @@ const MainSection = () => {
 
       <SectionItem>
         <SectionTitle text='Skills'/>
-        <RatingList rateList={skillList}/>
+        <RatingList rateList={mainSkillList}/>
       </SectionItem>
 
       <SectionItem>
@@ -76,6 +76,11 @@ const MainSection = () => {
           term={'10/14/2019'}
           company={'HTML Academy'}
         />
+      </SectionItem>
+
+      <SectionItem>
+        <SectionTitle text='Other skills'/>
+        <RatingList rateList={otherSkillList}/>
       </SectionItem>
     </Stack>
   );
