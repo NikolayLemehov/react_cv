@@ -29,11 +29,15 @@ export const mainSkillList: ISkillItem[] = [
     rate: 2
   },
   {
-    text: 'Mongoose',
+    text: 'NestJS',
     rate: 1
   },
   {
     text: 'Express',
+    rate: 1
+  },
+  {
+    text: 'Mongoose',
     rate: 1
   },
   {
