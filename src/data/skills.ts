@@ -37,6 +37,10 @@ export const mainSkillList: ISkillItem[] = [
     rate: 1
   },
   {
+    text: 'Docker',
+    rate: 1
+  },
+  {
     text: 'HTML',
     rate: 4
   },
